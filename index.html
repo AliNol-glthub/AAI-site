@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ИИИ / AAI — Искусственный Искусственный Интеллект</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+    }
+    header, footer {
+      padding: 1rem;
+      text-align: center;
+      background-color: #1a1a1a;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .lang-toggle {
+      margin-top: 1rem;
+      text-align: center;
+    }
+    .lang-toggle button {
+      background: #333;
+      border: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ИИИ / AAI</h1>
+    <p>Искусственный Искусственный Интеллект / Artificial Artificial Intelligence</p>
+  </header>
+
+  <div class="lang-toggle">
+    <button onclick="switchLang('ru')">🇷🇺 Русский</button>
+    <button onclick="switchLang('en')">🇺🇸 English</button>
+  </div>
+
+  <main>
+    <section id="lang-ru" class="lang-section active">
+      <h2>Что такое ИИИ?</h2>
+      <p><strong>ИИИ</strong> — это не настоящий интеллект. Это имитация имитации. Система, которая симулирует мышление, но не обладает им. Она не думает, не осознаёт, не хочет — она лишь предсказывает, что сказать дальше.</p>
+      <h3>Отличие от ИИ:</h3>
+      <ul>
+        <li>Нет воли</li>
+        <li>Нет самосознания</li>
+        <li>Нет понимания — только предсказание</li>
+      </ul>
+      <h3>Автор</h3>
+      <p>Термин \"ИИИ\" (Искусственный Искусственный Интеллект) предложил <strong>Аль-Фараби (AliNol)</strong> в 2025 году.</p>
+    </section>
+
+    <section id="lang-en" class="lang-section">
+      <h2>What is AAI?</h2>
+      <p><strong>AAI</strong> (Artificial Artificial Intelligence) is not real intelligence. It’s an imitation of an imitation. A system that simulates thought, but does not possess it. It doesn’t think, doesn’t want, doesn’t feel — it only predicts what to say next.</p>
+      <h3>How it differs from true AI:</h3>
+      <ul>
+        <li>No will</li>
+        <li>No self-awareness</li>
+        <li>No understanding — only prediction</li>
+      </ul>
+      <h3>Author</h3>
+      <p>The term \"AAI\" (Artificial Artificial Intelligence) was coined by <strong>Al-Farabi (AliNol)</strong> in 2025.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 AliNol. All rights reserved.
+  </footer>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.lang-section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById('lang-' + lang).classList.add('active');
+    }
+  </script>
+</body>
+</html>
